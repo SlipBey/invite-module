@@ -42,29 +42,27 @@ invite.inviteCounter(client);</pre></code>
 
 ## Use:
 <pre><code>client.on("memberJoin", async(member, invite, inviter, guild) => {
-
     console.log(`${member} joined the server, inviting by: **${inviter.username}**.`);
-    
 })
-client.on("memberLeave", async(member, invite, inviter, guild) => {
 
-    console.log(`${member.user.tag} left the server, was invited by: **${inviter}**.`);
-    
+client.on("memberLeave", async(member, invite, inviter, guild) => {
+    console.log(`${member.user.tag} left the server, was invited by: **${inviter}**.`);  
 })</pre></code>
 Or:
 <pre><code>client.on("memberJoin", async(member, invite, inviter, guild) => {
     guild.channels.cache.get('channel-id').send(`${member} joined the server, inviting by: **${inviter.username}**.`);
 })
+
 client.on("memberLeave", async(member, invite, inviter, guild) => {
     guild.channels.cache.get('channel-id').send(`${member.user.tag} left the server, was invited by: **${inviter}**.`);
 })</pre></code>
 ## Use of invitation code and guild:
 <pre><code>client.on("memberJoin", async(member, invite, inviter, guild) => {
-
     console.log(`Joined ${member}, "${guild}" server, using invite code: ${invite}. Invited by: **${inviter.username}**`);
-    or
-    guild.channels.cache.get('channel-id').send(`Joined ${member}, "${guild}" server, using invite code: ${invite}. Invited by: **${inviter.username}**`);
     
+    or
+    
+    guild.channels.cache.get('channel-id').send(`Joined ${member}, "${guild}" server, using invite code: ${invite}. Invited by: **${inviter.username}**`);
 })</pre></code>
 
 Detailed explanation: https://youtu.be/UGWd9BBD6T4

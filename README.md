@@ -6,7 +6,7 @@
 [![stars](https://img.shields.io/github/stars/SlipBey/invite-module?color=yellow&logo=github&style=for-the-badge)](https://github.com/SlipBey/invite-module)
 [![license](https://img.shields.io/github/license/SlipBey/invite-module?logo=github&style=for-the-badge)](https://github.com/SlipBey/invite-module)
 
-## Invite Module
+## Invite Modle
 
 Discord.JS v13 Modulue.
 
@@ -14,11 +14,67 @@ Discord.JS v13 Modulue.
 
     $ npm install invite-module
 
-
-## Docs
-
-https://invite-module.slipyme.xyz
-
 ## Examples
 
-See https://invite-module.slipyme.xyz/example
+#Paramaters:
+
+`member, invite, inviter, guild`
+
+`member -> invited user and returns as server member`
+`invite -> invite code`
+`inviter -> inviter and return as user`
+`guild -> in member guild`
+
+#Client and Intent:
+`
+const { Discord, Client, Collection, Intents, Guild } = require('discord.js');
+const client = new Client({ 
+    intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILDS,
+    Intents.FLAGS.GUILD_MESSAGE_REACTIONS, Intents.FLAGS.GUILD_PRESENCES, Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILD_INVITES] ,
+    partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'ROLE', "GUILD_MEMBER", "USER", "GUILD_INVITES", "MANAGE_GUILD"],
+    });
+//calling the module
+const invite = require('invite-module');
+invite.inviteCounter(client);
+`
+
+`guildMemberAdd`, `memberJoin` event now.
+`guildMemberRemove`, `memberLeave` event now.
+
+#Use:
+`
+client.on("memberJoin", async(member, invite, inviter, guild) => {
+
+    console.log(`${member} joined the server, inviting by: **${inviter.username}**.`);
+    
+})
+client.on("memberLeave", async(member, invite, inviter, guild) => {
+
+    console.log(`${member.user.tag} left the server, was invited by: **${inviter}**.`);
+    
+})
+`
+Or:
+`
+client.on("memberJoin", async(member, invite, inviter, guild) => {
+
+    guild.channels.cache.get('channel-id').send(`${member} joined the server, inviting by: **${inviter.username}**.`);
+    
+})
+client.on("memberLeave", async(member, invite, inviter, guild) => {
+
+    guild.channels.cache.get('channel-id').send(`${member.user.tag} left the server, was invited by: **${inviter}**.`);
+    
+})
+`
+
+#Use of invitation code and guild:
+`
+client.on("memberJoin", async(member, invite, inviter, guild) => {
+
+    console.log(`Joined ${member}, "${guild}" server, using invite code: ${invite}. Invited by: **${inviter.username}**`);
+    or
+    guild.channels.cache.get('channel-id').send(`Joined ${member}, "${guild}" server, using invite code: ${invite}. Invited by: **${inviter.username}**`);
+    
+})
+`

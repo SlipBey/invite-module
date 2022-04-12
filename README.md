@@ -18,14 +18,15 @@ Discord.JS v13 invite logger module.
 
 ## Paramaters:
 
-`member, invite, inviter, guild`
-
-`member -> invited user and returns as server member`
-`invite -> invite code`
-`inviter -> inviter and return as user`
-`guild -> in member guild`
+<h5>
+<b>member</b> -> invited user and returns as server member
+<b>invite</b> -> invite code
+<b>inviter</b> -> inviter and return as user
+<b>guild</b> -> in member guild
+</h5>
 
 ## Client and Intent:
+<div class="highlight highlight-source-js">
 <pre><code>
 const { Discord, Client, Collection, Intents, Guild } = require('discord.js');
 const client = new Client({ 
@@ -37,11 +38,13 @@ const client = new Client({
 const invite = require('invite-module');
 invite.inviteCounter(client);
 </pre></code>
+</div>
 
 `guildMemberAdd`, `memberJoin` event now.
 `guildMemberRemove`, `memberLeave` event now.
 
 ## Use:
+<div class="highlight highlight-source-js">
 <pre><code>
 client.on("memberJoin", async(member, invite, inviter, guild) => {
 
@@ -54,7 +57,9 @@ client.on("memberLeave", async(member, invite, inviter, guild) => {
     
 })
 </pre></code>
+</div>
 Or:
+<div class="highlight highlight-source-js">
 <pre><code>
 client.on("memberJoin", async(member, invite, inviter, guild) => {
 
@@ -67,8 +72,9 @@ client.on("memberLeave", async(member, invite, inviter, guild) => {
     
 })
 </pre></code>
-
+</div>
 ## Use of invitation code and guild:
+<div class="highlight highlight-source-js">
 <pre><code>
 client.on("memberJoin", async(member, invite, inviter, guild) => {
 
@@ -78,5 +84,5 @@ client.on("memberJoin", async(member, invite, inviter, guild) => {
     
 })
 </pre></code>
-
+</div>
 Detailed explanation: https://youtu.be/UGWd9BBD6T4

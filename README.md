@@ -19,13 +19,13 @@ Discord.JS v13 invite logger module.
 ## Paramaters:
 
 <h5>
-<b>member</b> -> invited user and returns as server member
+`member` -> invited user and returns as server member
 <br>
-<b>invite</b> -> invite code
+`invite` -> invite code
 <br>    
-<b>inviter</b> -> inviter and return as user
+`inviter` -> inviter and return as user
 <br>    
-<b>guild</b> -> in member guild
+`guild` -> in member guild
 </h5>
 
 ## Client and Intent:

@@ -1,0 +1,31 @@
+{
+  "name": "invite-module",
+  "version": "1.0.3",
+  "description": "Discord.JS v13 sürümüne özel yapılmış olan davet modülüdür.",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SlipBey/invite-module.git"
+  },
+  "keywords": [
+    "davet",
+    "invite",
+    "davet",
+    "modülü",
+    "invite",
+    "module",
+    "invite",
+    "manager",
+    "davet",
+    "sayıcı"
+  ],
+  "author": "SlipBey",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/SlipBey/invite-module/issues"
+  },
+  "homepage": "https://github.com/SlipBey/invite-module#readme"
+}

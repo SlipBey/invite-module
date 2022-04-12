@@ -1,47 +1,27 @@
-![Banner](https://raw.githubusercontent.com/barbarbar338/sidra/main/assets/banner.png)
-[![build](https://img.shields.io/github/workflow/status/barbarbar338/sidra/Build%20and%20Test?logo=github&style=for-the-badge)](https://github.com/barbarbar338/sidra)
-[![supportServer](https://img.shields.io/discord/711995199945179187?color=7289DA&label=Support&logo=discord&style=for-the-badge)](https://discord.gg/BjEJFwh)
+[![build](https://img.shields.io/github/workflow/status/SlipBey/invite-module/Build%20and%20Test?logo=github&style=for-the-badge)](https://github.com/SlipBey/invite-module)
+[![supportServer](https://img.shields.io/discord/904103710903390218?color=7289DA&label=Support&logo=discord&style=for-the-badge)](https://slip.slipyme.xyz/discord)
 [![totalDownloads](https://img.shields.io/npm/dt/sidra?color=CC3534&logo=npm&style=for-the-badge)](http://npmjs.com/sidra)
 [![weeklyDownloads](https://img.shields.io/npm/dw/sidra?color=CC3534&logo=npm&style=for-the-badge)](http://npmjs.com/sidra)
 [![version](https://img.shields.io/npm/v/sidra?color=red&label=Version&logo=npm&style=for-the-badge)](http://npmjs.com/sidra)
 [![stars](https://img.shields.io/github/stars/barbarbar338/sidra?color=yellow&logo=github&style=for-the-badge)](https://github.com/barbarbar338/sidra)
-[![license](https://img.shields.io/github/license/barbarbar338/sidra?logo=github&style=for-the-badge)](https://github.com/barbarbar338/sidra)
+[![license](https://img.shields.io/github/license/barbarbar338/sidra?logo=github&style=for-the-badge)](https://github.com/SlipBey/invite-module)
 
-## ⚔️ SidraJS
+## Invite Module
 
-Sidra offers you many [decorators](https://stackoverflow.com/tags/javascript-decorators/info) for you to use with the [express](https://www.npmjs.com/express) module.
-
-TypeScript definitions are built in.
+Discord.JS v13 Modulue.
 
 ## Installation
 
--   With CLI:
-    -   Run
+        Download
         ```
-        $ npm install --global --save sidra
+        $ npm install invite-module
         ```
-        or
-        ```
-        $ yarn global add sidra
-        ```
-    -   Run
-        ```
-        $ sidra create
-        ```
--   Without CLI:
-    -   Run
-        ```
-        $ npm install --global --save sidra
-        ```
-        or
-        ```
-        $ yarn global add sidra
-        ```
+
 
 ## Docs
 
-https://sidra.bariscodes.me/
+https://invite-module.slipyme.xyz
 
 ## Examples
 
-See https://github.com/barbarbar338/sidra-template
+See https://invite-module.slipyme.xyz/example

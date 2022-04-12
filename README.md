@@ -16,7 +16,7 @@ Discord.JS v13 Modulue.
 
 ## Examples
 
-##Paramaters:
+## Paramaters:
 
 `member, invite, inviter, guild`
 
@@ -25,7 +25,7 @@ Discord.JS v13 Modulue.
 `inviter -> inviter and return as user`
 `guild -> in member guild`
 
-##Client and Intent:
+## Client and Intent:
 <pre><code>
 const { Discord, Client, Collection, Intents, Guild } = require('discord.js');
 const client = new Client({ 
@@ -41,7 +41,7 @@ invite.inviteCounter(client);
 `guildMemberAdd`, `memberJoin` event now.
 `guildMemberRemove`, `memberLeave` event now.
 
-##Use:
+## Use:
 <pre><code>
 client.on("memberJoin", async(member, invite, inviter, guild) => {
 
@@ -68,7 +68,7 @@ client.on("memberLeave", async(member, invite, inviter, guild) => {
 })
 </pre></code>
 
-##Use of invitation code and guild:
+## Use of invitation code and guild:
 <pre><code>
 client.on("memberJoin", async(member, invite, inviter, guild) => {
 
@@ -78,3 +78,5 @@ client.on("memberJoin", async(member, invite, inviter, guild) => {
     
 })
 </pre></code>
+
+Detailed explanation: https://youtu.be/UGWd9BBD6T4

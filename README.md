@@ -26,7 +26,7 @@ Discord.JS v13 Modulue.
 `guild -> in member guild`
 
 #Client and Intent:
-`
+<pre><code>
 const { Discord, Client, Collection, Intents, Guild } = require('discord.js');
 const client = new Client({ 
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILDS,
@@ -36,13 +36,13 @@ const client = new Client({
 //calling the module
 const invite = require('invite-module');
 invite.inviteCounter(client);
-`
+</pre></code>
 
 `guildMemberAdd`, `memberJoin` event now.
 `guildMemberRemove`, `memberLeave` event now.
 
 #Use:
-`
+<pre><code>
 client.on("memberJoin", async(member, invite, inviter, guild) => {
 
     console.log(`${member} joined the server, inviting by: **${inviter.username}**.`);
@@ -53,9 +53,9 @@ client.on("memberLeave", async(member, invite, inviter, guild) => {
     console.log(`${member.user.tag} left the server, was invited by: **${inviter}**.`);
     
 })
-`
+</pre></code>
 Or:
-`
+<pre><code>
 client.on("memberJoin", async(member, invite, inviter, guild) => {
 
     guild.channels.cache.get('channel-id').send(`${member} joined the server, inviting by: **${inviter.username}**.`);
@@ -66,7 +66,7 @@ client.on("memberLeave", async(member, invite, inviter, guild) => {
     guild.channels.cache.get('channel-id').send(`${member.user.tag} left the server, was invited by: **${inviter}**.`);
     
 })
-`
+</pre></code>
 
 #Use of invitation code and guild:
 <pre><code>

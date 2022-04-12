@@ -27,27 +27,21 @@ Discord.JS v13 invite logger module.
 `guild` -> in member guild
 
 ## Client and Intent:
-<div class="highlight highlight-source-js">
-<pre><code>
-const { Discord, Client, Collection, Intents, Guild } = require('discord.js');
+<pre><code>const { Discord, Client, Collection, Intents, Guild } = require('discord.js');
 const client = new Client({ 
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILDS,
     Intents.FLAGS.GUILD_MESSAGE_REACTIONS, Intents.FLAGS.GUILD_PRESENCES, Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILD_INVITES] ,
     partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'ROLE', "GUILD_MEMBER", "USER", "GUILD_INVITES", "MANAGE_GUILD"],
     });
-//calling the module
+//get the module
 const invite = require('invite-module');
-invite.inviteCounter(client);
-</pre></code>
-</div>
+invite.inviteCounter(client);</pre></code>
 
 `guildMemberAdd`, `memberJoin` event now.
 `guildMemberRemove`, `memberLeave` event now.
 
 ## Use:
-<div class="highlight highlight-source-js">
-<pre><code>
-client.on("memberJoin", async(member, invite, inviter, guild) => {
+<pre><code>client.on("memberJoin", async(member, invite, inviter, guild) => {
 
     console.log(`${member} joined the server, inviting by: **${inviter.username}**.`);
     
@@ -56,34 +50,21 @@ client.on("memberLeave", async(member, invite, inviter, guild) => {
 
     console.log(`${member.user.tag} left the server, was invited by: **${inviter}**.`);
     
-})
-</pre></code>
-</div>
+})</pre></code>
 Or:
-<div class="highlight highlight-source-js">
-<pre><code>
-client.on("memberJoin", async(member, invite, inviter, guild) => {
-
+<pre><code>client.on("memberJoin", async(member, invite, inviter, guild) => {
     guild.channels.cache.get('channel-id').send(`${member} joined the server, inviting by: **${inviter.username}**.`);
-    
 })
 client.on("memberLeave", async(member, invite, inviter, guild) => {
-
     guild.channels.cache.get('channel-id').send(`${member.user.tag} left the server, was invited by: **${inviter}**.`);
-    
-})
-</pre></code>
-</div>
+})</pre></code>
 ## Use of invitation code and guild:
-<div class="highlight highlight-source-js">
-<pre><code>
-client.on("memberJoin", async(member, invite, inviter, guild) => {
+<pre><code>client.on("memberJoin", async(member, invite, inviter, guild) => {
 
     console.log(`Joined ${member}, "${guild}" server, using invite code: ${invite}. Invited by: **${inviter.username}**`);
     or
     guild.channels.cache.get('channel-id').send(`Joined ${member}, "${guild}" server, using invite code: ${invite}. Invited by: **${inviter.username}**`);
     
-})
-</pre></code>
-</div>
+})</pre></code>
+
 Detailed explanation: https://youtu.be/UGWd9BBD6T4

@@ -8,7 +8,7 @@
 
 ## Invite Modle
 
-Discord.JS v13 Modulue.
+Discord.JS v13 invite logger module.
 
 ## Installation
 

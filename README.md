@@ -1,4 +1,4 @@
-[![build](https://img.shields.io/github/workflow/status/SlipBey/invite-module/Build%20and%20Test?logo=github&style=for-the-badge)](https://github.com/SlipBey/invite-module)
+[![build](https://img.shields.io/github/workflow/status/SlipBey/invite-module/Github?logo=github&style=for-the-badge)](https://github.com/SlipBey/invite-module)
 [![supportServer](https://img.shields.io/discord/904103710903390218?color=7289DA&label=Support&logo=discord&style=for-the-badge)](https://slip.slipyme.xyz/discord)
 [![totalDownloads](https://img.shields.io/npm/dt/sidra?color=CC3534&logo=npm&style=for-the-badge)](http://npmjs.com/sidra)
 [![weeklyDownloads](https://img.shields.io/npm/dw/sidra?color=CC3534&logo=npm&style=for-the-badge)](http://npmjs.com/sidra)

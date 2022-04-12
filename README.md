@@ -58,11 +58,11 @@ client.on("memberLeave", async(member, invite, inviter, guild) => {
 })</pre></code>
 ## Use of invitation code and guild:
 <pre><code>client.on("memberJoin", async(member, invite, inviter, guild) => {
-    console.log(`Joined ${member}, "${guild}" server, using invite code: ${invite}. Invited by: **${inviter.username}**`);
+    console.log(`Joined ${member}, "${guild}" server, using invite code: ${invite}. Invited by: **${inviter.username}**`);</pre></code>
     
-    or
+<p>Or</p>
     
-    guild.channels.cache.get('channel-id').send(`Joined ${member}, "${guild}" server, using invite code: ${invite}. Invited by: **${inviter.username}**`);
+<pre><code>guild.channels.cache.get('channel-id').send(`Joined ${member}, "${guild}" server, using invite code: ${invite}. Invited by: **${inviter.username}**`);
 })</pre></code>
 
 Detailed explanation: https://youtu.be/UGWd9BBD6T4

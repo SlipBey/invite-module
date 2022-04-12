@@ -4,7 +4,7 @@
 [![weeklyDownloads](https://img.shields.io/npm/dw/sidra?color=CC3534&logo=npm&style=for-the-badge)](http://npmjs.com/sidra)
 [![version](https://img.shields.io/npm/v/sidra?color=red&label=Version&logo=npm&style=for-the-badge)](http://npmjs.com/sidra)
 [![stars](https://img.shields.io/github/stars/SlipBey/invite-module?color=yellow&logo=github&style=for-the-badge)](https://github.com/barbarbar338/sidra)
-[![license](https://img.shields.io/github/license/barbarbar338/sidra?logo=github&style=for-the-badge)](https://github.com/SlipBey/invite-module)
+[![license](https://img.shields.io/github/license/SlipBey/invite-module?logo=github&style=for-the-badge)](https://github.com/SlipBey/invite-module)
 
 ## Invite Module
 
